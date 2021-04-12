@@ -454,6 +454,7 @@ form label {
   height: 235px;
 }
 .header{
+  justify-content: center;
   align-items: center;
   width: 50%;
 }
