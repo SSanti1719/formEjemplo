@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    
+    <title>Formulario</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="header column">
+        <div class="imgUp">
+          <img class="img1" src="/assets/astronauta1.png" alt="" />
+        </div>
+        <div class="titulo">
+          <h1>Visita el espacio con nosotros y explora otros mundos...</h1>
+        </div>
+        <div class="imgUp2">
+          <img class="img3" src="/assets/astronauta2.png" alt="" />
+        </div>
+       
+      </div>
+      <div>
+        <section class="section-form">
+          <form action="" id="formulario">
+            <h2>FORMULARIO DE INGRESO</h2>
+            <div class="column mb10">
+              <label class="mb10">Nombre</label>
+              <input type="text" name="nombre" id="nombre"/>
+              <label class="noError" id="grupo_nombre">
+                Asegúrese de haber ingresado un nombre válido
+              </label>
+            </div>
+            <div class="column mb10">
+              <label class="mb10" >Apellidos</label>
+              <input type="text" name="apellidos" id="apellidos"/>
+              <label class="noError" id="grupo_apellidos">Asegúrese de haber ingresado apellidos válidos</label>
+            </div>
+            <div class="column mb10">
+              <label class="mb10" >Email</label>
+              <input type="email" name="correo" id="correo" />
+              <label class="noError" id="grupo_correo">Asegúrese de haber ingresado un correo electrónico válido</label>
+            </div>
+            <div class="column mb10">
+              <label class="mb10" >Edad</label>
+              <input type="number" name="edad" id="edad"/>
+              <label class="noError" id="grupo_edad">La edad debe contener al menos 1 dígito y máximo de 2</label>
+            </div>
+            <div class="column mb10">
+              <label class="mb10" ">Telefono</label>
+              <div class="row mb10">
+                <select name="" id="">
+                  <option value="">+57</option>
+                  <option value="">+54</option>
+                  <option value="">+45</option>
+                </select>
+                <input class="ml10" name="telefono" type="tel" id="telefono" />
+                <label class="noError" id="grupo_telefono">El teléfono debe tener al menos 7 a 14 numeros.</label>
+              </div>
+            </div>
+            <div class="row mb10">
+              <div class="column w100">
+                <label class="mb10">País</label>
+                <select name="" id="">
+                  <option value="">Colombia</option>
+                  <option value="">España</option>
+                  <option value="">París</option>
+                </select>
+              </div>
+              <div class="column w100 ml10">
+                <label class="mb10">Ciudad</label>
+                <select name="" id="">
+                  <option value="">Manizales</option>
+                  <option value="">Ciudad 2</option>
+                  <option value="">Ciudad 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="row input-check mb10">
+              <input type="checkbox" name="terminos" id="terminos"/>
+              <label>Acepta los terminos y condiciones del uso de tratamiento de sus
+                datos</label>
+                <label class="noError" id="grupo_terminos"></label>
+            </div>
+            <div class="row input-check mb10">
+              <input type="checkbox" />
+              <label>Deseo recibir una suscripción mensual a mi correo</label>
+            </div>
+            <div class="sendForm">
+              <button class="botonEnviar" type="submit">Suscribirse</button>
+              <label id="formulario_mensaje" class="noError">Uno o más campos inválidos, asegurese de aceptar los términos y condiciones</label>
+            </div>
+          </form>
+        </section>
+        <section class="imgDown column">
+          <img class="img2" src="/assets/astronauta2.png" alt="" />
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
